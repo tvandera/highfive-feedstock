@@ -1,10 +1,11 @@
+{% set version = "2.2" %}
+
 package:
   name: highfive
-  version: 2.2
+  version: {{ version }}
 
 source:
-  git_url: https://github.com/BlueBrain/HighFive
-  git_tag: v2.2
+  url:  https://github.com/BlueBrain/HighFive/archive/refs/tags/v{{ version }}.tar.gz
 
 build:
   number: 3
